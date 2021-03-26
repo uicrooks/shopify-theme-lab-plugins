@@ -1,5 +1,6 @@
 /**
  * I18n class which loads all shopify locale files
+ * and exposes a translate $t function
  */
 class I18n {
   constructor (options) {
@@ -37,22 +38,6 @@ class I18n {
   }
 }
 
-/**
- * vue plugin
- */
-const VuePlugin = {
-  install (Vue, options) {
-    const i18n = new I18n(options)
-
-    Vue.prototype.$i18n = i18n
-    Vue.prototype.$t = i18n.$t
-  }
-}
-
-/**
- * export
- */
 export {
-  I18n,
-  VuePlugin
+  I18n
 }
