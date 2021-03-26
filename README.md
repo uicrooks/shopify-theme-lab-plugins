@@ -16,6 +16,9 @@
 An I18n plugin for [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme-lab). Use the same locale files from Shopify for your JavaScript or Vue files.
 <!-- title / description (end) -->
 
+## Requirements
+Shopify Theme Lab >= `2.5.0`
+
 ## Installation
 
 ### npm
