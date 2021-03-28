@@ -1,6 +1,6 @@
 <!-- logo (start) -->
 <p align="center">
-  <img src="./img/logo.svg" width="350px">
+  <img src=".github/img/logo-reloader.svg" width="350px">
 </p>
 <!-- logo (end) -->
 
