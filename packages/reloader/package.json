@@ -4,6 +4,7 @@
   "author": "Sergej Samsonenko <contact@sergej.codes>",
   "version": "2.0.0",
   "license": "MIT",
+  "repository": "git@github.com:uicrooks/shopify-theme-lab-plugins.git",
   "main": "server.js",
   "keywords": [
     "shopify",

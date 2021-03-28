@@ -4,8 +4,13 @@
   "author": "Sergej Samsonenko <contact@sergej.codes>",
   "version": "1.0.0",
   "license": "MIT",
-  "repository": "git@github.com:uicrooks/shopify-theme-lab-i18n.git",
+  "repository": "git@github.com:uicrooks/shopify-theme-lab-plugins.git",
   "main": "dist/i18n.esm.js",
+  "keywords": [
+    "shopify",
+    "theme-lab",
+    "i18n"
+  ],
   "scripts": {
     "watch": "cross-env NODE_ENV=development rollup -c rollup.config.js -w",
     "build": "cross-env NODE_ENV=production rollup -c rollup.config.js"
