@@ -23,12 +23,12 @@ Shopify Theme Lab >= `2.5.0`
 
 ### npm
 ```sh
-npm install @uicrooks/shopify-theme-lab-i18n
+npm install shopify-theme-lab-i18n
 ```
 
 ### yarn
 ```sh
-yarn add @uicrooks/shopify-theme-lab-i18n
+yarn add shopify-theme-lab-i18n
 ```
 
 ## Locales
@@ -50,7 +50,7 @@ Upcoming examples assume you have the `shopify/locales/en.default.json` file wit
 create `src/i18n.js` file with the following content:
 
 ```js
-import { I18n } from '@uicrooks/shopify-theme-lab-i18n'
+import { I18n } from 'shopify-theme-lab-i18n'
 
 const i18n = new I18n()
 const $t = i18n.$t
@@ -75,7 +75,7 @@ in `src/main.js` add the i18n Vue plugin:
 
 ```js
 import Vue from 'vue'
-import { VuePlugin as i18n } from '@uicrooks/shopify-theme-lab-i18n'
+import { VuePlugin as i18n } from 'shopify-theme-lab-i18n'
 
 Vue.use(i18n)
 ```
