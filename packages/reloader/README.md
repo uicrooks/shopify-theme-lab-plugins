@@ -83,10 +83,10 @@ Your `package.json` file should look something like this:
 ## Settings
 Settings and ports for the plugin can be adjusted in the `package.json` file of your Theme Lab project.
 
-| Option | Description |
-| - | - |
-| serverPort | the localhost port `shopify:watch` task and `server` use to communicate |
-| websocketPort | the localhost port `server` and `clients` use to communicate |
-| delay | auto-reload needs a slight delay before reloading the remote site, so all newly uploaded files will be loaded. Values between `1600`ms and `2000`ms seem to work well |
-| indicator | display a visual status indicator on your page when the connection changes |
+| Option | Description | Possible values | Default value |
+| - | - | - | - |
+| serverPort | the localhost port `shopify:watch` task and `server` use to communicate | Number | 5000 |
+| websocketPort | the localhost port `server` and `clients` use to communicate | Number | 5050 |
+| delay | auto-reload needs a slight delay before reloading the remote site, so all newly uploaded files will be loaded. Values between `1600`ms and `2000`ms seem to work well | Number | 2000 |
+| indicator | display a visual status indicator on your page when the connection changes | true / false / "light" | false |
 <!-- settings (end) -->
