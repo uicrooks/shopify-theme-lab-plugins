@@ -7,7 +7,7 @@
 <!-- title / description (start) -->
 <h2 align="center">Shopify Theme Lab Reloader</h2>
 
-Shopify Theme Lab Reloader is a plugin for reloading a remote Shopify theme during development. It's included by default in [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme-lab).
+Plugin for reloading a remote Shopify theme during development. It's included by default in [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme-lab).
 <!-- title / description (end) -->
 
 <!-- how it works (start) -->
@@ -35,6 +35,7 @@ yarn add shopify-theme-lab-reloader
 
 <!-- setup (start) -->
 ## Setup
+Use one of the following methods.
 
 ### Webpack
 Include the `client.autoload.js` script in the `entry` array of `webpack.dev.js`:
@@ -57,28 +58,10 @@ if (process.env.NODE_ENV === 'development') new ReloaderClient()
 ```
 
 ## Package.json
-Your `package.json` file should look something like this:
+The `scripts` section in your `package.json` file should look something like this:
 
 ```json
 {
-  ...
-  "scripts": {
-    "start": "npm-run-all --parallel --silent --race dev reloader shopify:watch",
-    "reloader": "node node_modules/shopify-theme-lab-reloader",
-    "shopify:watch": "cross-env-shell shopify-themekit watch --env=dev --allow-live --config .config/shopify/shopify.dev.yml --notify=http://localhost:$npm_package_config_reloader_serverPort/reload",
-  }
-  ...
-}
-```
-<!-- setup (end) -->
-
-<!-- settings (start) -->
-## Settings
-Settings and ports for the plugin can be adjusted in the `package.json` file of your Theme Lab project.
-
-```json
-{
-  ...
   "config": {
     "reloader": {
       "serverPort": 5000,
@@ -86,10 +69,19 @@ Settings and ports for the plugin can be adjusted in the `package.json` file of 
       "delay": 2000,
       "indicator": true
     }
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel --silent --race dev reloader shopify:watch",
+    "reloader": "node node_modules/shopify-theme-lab-reloader",
+    "shopify:watch": "cross-env-shell shopify-themekit watch --env=dev --allow-live --config .config/shopify/shopify.dev.yml --notify=http://localhost:$npm_package_config_reloader_serverPort/reload"
   }
-  ...
 }
 ```
+<!-- setup (end) -->
+
+<!-- settings (start) -->
+## Settings
+Settings and ports for the plugin can be adjusted in the `package.json` file of your Theme Lab project.
 
 | Option | Description |
 | - | - |
