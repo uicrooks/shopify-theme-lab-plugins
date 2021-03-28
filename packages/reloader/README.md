@@ -58,7 +58,7 @@ if (process.env.NODE_ENV === 'development') new ReloaderClient()
 ```
 
 ## Package.json
-The `scripts` section in your `package.json` file should look something like this:
+Your `package.json` file should look something like this:
 
 ```json
 {
