@@ -24,12 +24,12 @@ If the connection between a client and server is lost, the client tries every co
 
 ### npm
 ```sh
-npm install shopify-theme-lab-reloader
+npm install shopify-theme-lab-reloader --save-dev
 ```
 
 ### yarn
 ```sh
-yarn add shopify-theme-lab-reloader
+yarn add shopify-theme-lab-reloader --dev
 ```
 <!-- installation (end) -->
 
