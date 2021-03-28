@@ -26,14 +26,14 @@ class ReloaderClient {
     this.socket.addEventListener('open', () => {
       if (!this.initialConnection) this.initialConnection = true
       this._log({ msg: 'connected', type: 'success' })
-      this.indicator.connected()
+      if (options.indicator) this.indicator.connected()
     })
 
     this.socket.addEventListener('close', () => {
       if (this.initialConnection) {
         this.initialConnection = false
         this._log({ msg: 'disconnected', type: 'error' })
-        this.indicator.disconnected()
+        if (options.indicator) this.indicator.disconnected()
       }
 
       setTimeout(() => this._init(), 1000)
