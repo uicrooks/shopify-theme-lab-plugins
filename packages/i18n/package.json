@@ -1,6 +1,6 @@
 {
   "name": "shopify-theme-lab-i18n",
-  "description": "Shopify Theme Lab i18n plugin",
+  "description": "Use the same locale files from Shopify for your js or vue files",
   "author": "Sergej Samsonenko <contact@sergej.codes>",
   "version": "1.0.0",
   "license": "MIT",
