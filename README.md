@@ -12,5 +12,5 @@ Official [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme-lab) plug
 
 | Plugin | Description |
 | - | - |
-| [i18n](/packages/i18n) | Use the same locale files from Shopify in your js or vue files |
+| [i18n](/packages/i18n) | Use the same locale files from Shopify for your js or vue files |
 | [reloader](/packages/reloader) | Reload a remote Shopify theme during development |
