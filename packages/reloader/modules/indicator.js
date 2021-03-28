@@ -1,3 +1,5 @@
+const options = require('../config')
+
 class ReloaderIndicator {
   constructor () {
     this.HTMLBodyElement = document.querySelector('body')
@@ -9,8 +11,8 @@ class ReloaderIndicator {
       top: 0,
       right: 0,
       zIndex: '999999999',
-      background: 'rgb(0,0,0)',
-      color: 'rgb(255,255,255)',
+      background: options.indicator === 'light' ? 'rgb(255,255,255)' : 'rgb(0,0,0)',
+      color: options.indicator === 'light' ? 'rgb(0,0,0)' : 'rgb(255,255,255)',
       fontFamily: 'Arial, sans-serif',
       fontSize: '12px',
       borderRadius: '0 0 0 8px',
