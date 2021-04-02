@@ -92,14 +92,14 @@ $ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out
 
 3. Add `*.pem` to your `.gitignore` file
 
-4. Add `websocketSecure` setting to your Reloader config
+4. Add `websocketSecure` setting to your Reloader config inside `package.json`
 ```json
 {
   "config": {
     "reloader": {
       "...": "",
       "webSocketPort": 5050,
-      "websocketSecure": true
+      "webSocketSecure": true
     }
   }
 }
@@ -107,11 +107,11 @@ $ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out
 
 5. Start your project with `npm run start`
 
-6. Visit [https://localhost:5050](https://localhost:5050) or the port you specified as `webSocketPort` and accept the warning presented by your browser. You should do it one to set an exception. Close the page.
+6. Visit [https://localhost:5050](https://localhost:5050) or the port you specified as `webSocketPort` and accept the warning presented by your browser (usually under “Advanced”). You should do it once to set an exception. Close the page.
 
 Now Reloader should run on a secure connection.
 
-By default Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it like this:
+By default Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it by roviding additional parameters for the `reloader` task inside `package.json`
 
 ```json
 {
