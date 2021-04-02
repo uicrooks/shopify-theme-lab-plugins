@@ -79,6 +79,49 @@ Your `package.json` file should look something like this:
 ```
 <!-- setup (end) -->
 
+<!-- secure websocket conection (start) -->
+## Secure WebSocket connection
+Certain browsers might have difficulties running an insecure WebSocket connection when visiting a secure site (like Firefox). This breaks the Reloader functionality since it runs on an insecure connection. To run a secure connection follow these steps:
+
+1. Install [openssl](https://www.openssl.org) (Included in [Git Bash command line for windows](https://gitforwindows.org))
+
+2. Go to the root directory of your project. Generate a certificate and a private key
+```sh
+$ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+```
+
+3. Add `*.pem` to your `.gitignore` file
+
+4. Add `websocketSecure` setting to your Reloader config
+```json
+{
+  "config": {
+    "reloader": {
+      "...": "",
+      "webSocketPort": 5050,
+      "websocketSecure": true
+    }
+  }
+}
+```
+
+5. Start your project with `npm run start`
+
+6. Visit [https://localhost:5050](https://localhost:5050) or the port you specified as `webSocketPort` and accept the warning presented by your browser. You should do it one to set an exception. Close the page.
+
+Now Reloader should run on a secure connection.
+
+By default Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it like this:
+
+```json
+{
+  "scripts": {
+    "reloader": "cross-env CERT=cert.pem KEY=key.pem node node_modules/shopify-theme-lab-reloader-dev"
+  }
+}
+```
+<!-- secure websocket conection (end) -->
+
 <!-- settings (start) -->
 ## Settings
 Settings and ports for the plugin can be adjusted in the `package.json` file of your Theme Lab project.
@@ -87,6 +130,7 @@ Settings and ports for the plugin can be adjusted in the `package.json` file of 
 | - | - | - | - |
 | serverPort | the localhost port `shopify:watch` task and `server` use to communicate | Number | 5000 |
 | websocketPort | the localhost port `server` and `clients` use to communicate | Number | 5050 |
+| websocketSecure | run a secure webSocket connection | true, false | false |
 | delay | auto-reload needs a slight delay before reloading the remote site, so all newly uploaded files will be loaded. Values between `1600`ms and `2000`ms seem to work well | Number | 2000 |
 | indicator | display a visual status indicator on your page when the connection changes | true, false, "light" | false |
 <!-- settings (end) -->

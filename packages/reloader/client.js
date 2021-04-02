@@ -18,7 +18,7 @@ class ReloaderClient {
   }
 
   _init () {
-    this.socket = new WebSocket(`ws://localhost:${options.webSocketPort}`)
+    this.socket = new WebSocket(`${options.webSocketSecure ? 'wss': 'ws'}://localhost:${options.webSocketPort}`)
 
     /**
      * websocket eventslisteners
