@@ -116,7 +116,7 @@ By default Reloader will look for `cert.pem` and `key.pem` files in your project
 ```json
 {
   "scripts": {
-    "reloader": "cross-env CERT=cert.pem KEY=key.pem node node_modules/shopify-theme-lab-reloader-dev"
+    "reloader": "cross-env CERT=cert.pem KEY=key.pem node node_modules/shopify-theme-lab-reloader"
   }
 }
 ```
