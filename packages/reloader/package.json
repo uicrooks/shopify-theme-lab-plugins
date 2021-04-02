@@ -2,7 +2,7 @@
   "name": "shopify-theme-lab-reloader",
   "description": "Reloads a remote Shopify theme during development",
   "author": "Sergej Samsonenko <contact@sergej.codes>",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "license": "MIT",
   "repository": "git@github.com:uicrooks/shopify-theme-lab-plugins.git",
   "main": "server.js",
