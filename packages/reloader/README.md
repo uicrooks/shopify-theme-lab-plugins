@@ -111,7 +111,7 @@ $ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out
 
 Now Reloader should run on a secure connection.
 
-By default Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it by providing additional parameters for the `reloader` task inside `package.json`
+By default, Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it by providing additional parameters for the `reloader` task inside `package.json`
 
 ```json
 {
@@ -129,8 +129,8 @@ Settings and ports for the plugin can be adjusted in the `package.json` file of 
 | Option | Description | Possible values | Default value |
 | - | - | - | - |
 | serverPort | the localhost port `shopify:watch` task and `server` use to communicate | Number | 5000 |
-| websocketPort | the localhost port `server` and `clients` use to communicate | Number | 5050 |
-| websocketSecure | run a secure webSocket connection | true, false | false |
+| webSocketPort | the localhost port `server` and `clients` use to communicate | Number | 5050 |
+| webSocketSecure | run a secure webSocket connection | true, false | false |
 | delay | auto-reload needs a slight delay before reloading the remote site, so all newly uploaded files will be loaded. Values between `1600`ms and `2000`ms seem to work well | Number | 2000 |
 | indicator | display a visual status indicator on your page when the connection changes | true, false, "light" | false |
 <!-- settings (end) -->
