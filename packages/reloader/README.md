@@ -92,7 +92,7 @@ $ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out
 
 3. Add `*.pem` to your `.gitignore` file
 
-4. Add `websocketSecure` setting to your Reloader config inside `package.json`
+4. Add `webSocketSecure` setting to your Reloader config inside `package.json`
 ```json
 {
   "config": {
