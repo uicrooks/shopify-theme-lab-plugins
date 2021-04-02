@@ -111,7 +111,7 @@ $ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out
 
 Now Reloader should run on a secure connection.
 
-By default Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it by roviding additional parameters for the `reloader` task inside `package.json`
+By default Reloader will look for `cert.pem` and `key.pem` files in your project root directory. If you want to change the name or location of these files, you can do it by providing additional parameters for the `reloader` task inside `package.json`
 
 ```json
 {
