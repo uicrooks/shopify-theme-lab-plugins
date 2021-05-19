@@ -2,7 +2,7 @@
   "name": "shopify-theme-lab-i18n",
   "description": "Use the same locale files from Shopify for your js or vue files",
   "author": "Sergej Samsonenko <contact@sergej.codes>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "git@github.com:uicrooks/shopify-theme-lab-plugins.git",
   "main": "dist/i18n.esm.js",
