@@ -2,7 +2,7 @@
   "name": "shopify-theme-lab-reloader",
   "description": "Reloads a remote Shopify theme during development",
   "author": "Sergej Samsonenko <contact@sergej.codes>",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "license": "MIT",
   "repository": "git@github.com:uicrooks/shopify-theme-lab-plugins.git",
   "main": "server.js",
@@ -12,7 +12,7 @@
     "reloader"
   ],
   "dependencies": {
-    "chalk": "^4.1.0",
-    "ws": "^7.4.4"
+    "chalk": "^4.1.1",
+    "ws": "^7.4.5"
   }
 }
