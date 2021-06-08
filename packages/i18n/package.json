@@ -2,7 +2,7 @@
   "name": "shopify-theme-lab-i18n",
   "description": "Use the same locale files from Shopify for your js or vue files",
   "author": "Sergej Samsonenko <contact@sergej.codes>",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "repository": "git@github.com:uicrooks/shopify-theme-lab-plugins.git",
   "main": "dist/i18n.esm.js",
@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
     "@rollup/plugin-babel": "^5.3.0",
     "cross-env": "^7.0.3",
-    "rollup": "^2.48.0"
+    "rollup": "^2.51.1"
   }
 }

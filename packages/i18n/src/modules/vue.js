@@ -1,11 +1,11 @@
 import { I18n } from './i18n'
 
 const VuePlugin = {
-  install (Vue, options) {
+  install (app, options) {
     const i18n = new I18n(options)
 
-    Vue.prototype.$i18n = i18n
-    Vue.prototype.$t = i18n.$t
+    app.config.globalProperties.$i18n = i18n
+    app.config.globalProperties.$t = i18n.$t
   }
 }
 
