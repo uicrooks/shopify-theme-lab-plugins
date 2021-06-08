@@ -12,7 +12,7 @@ An I18n plugin for [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme
 
 <!-- requirements (start) -->
 ## Requirements
-Shopify Theme Lab >= `2.5.0`
+Shopify Theme Lab >= `3.0.0`
 <!-- requirements (end) -->
 
 <!-- installation (start) -->
@@ -77,10 +77,11 @@ $t('action.log_in')
 in `src/main.js` add the i18n Vue plugin:
 
 ```js
-import Vue from 'vue'
+import { createApp } from 'vue'
 import { VuePlugin as i18n } from 'shopify-theme-lab-i18n'
 
-Vue.use(i18n)
+const app = createApp({})
+app.use(i18n)
 ```
 
 Inside Vue components you can now call the `$t` method:
