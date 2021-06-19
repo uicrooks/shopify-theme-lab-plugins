@@ -1,4 +1,5 @@
-import type { I18nOptions } from '../types/global'
+/// <reference path="../types/global.ts" />
+
 import { I18n } from './i18n'
 
 export const VuePlugin = {

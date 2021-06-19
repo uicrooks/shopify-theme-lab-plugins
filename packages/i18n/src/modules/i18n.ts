@@ -1,8 +1,4 @@
-import type {
-  I18nOptions,
-  Translations,
-  AllTranslations
-} from '../types/global'
+/// <reference path="../types/global.ts" />
 
 /**
  * I18n class which loads all shopify locale files
