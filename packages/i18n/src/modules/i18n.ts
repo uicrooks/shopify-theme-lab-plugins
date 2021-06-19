@@ -1,3 +1,9 @@
+import type {
+  I18nOptions,
+  Translations,
+  AllTranslations
+} from '../types/global'
+
 /**
  * I18n class which loads all shopify locale files
  * and exposes a translate $t function
@@ -30,7 +36,7 @@ export class I18n {
     return translations
   }
 
-  $t (payload: string) {
+  $t (payload: string): string | undefined {
     let result: string | Translations = this.translations[this.locale]
 
     payload
@@ -39,6 +45,8 @@ export class I18n {
         if (typeof result !== 'string') result = result[el]
       })
 
-    return result
+    return typeof result === 'string'
+      ? result
+      : undefined
   }
 }

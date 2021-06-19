@@ -1,17 +1,19 @@
-interface Window {
-  Shopify: {
-    locale: string
+declare global {
+  interface Window {
+    Shopify: {
+      locale: string
+    }
   }
 }
 
-interface I18nOptions {
+export interface I18nOptions {
   fallbackLocale?: string
 }
 
-interface Translations {
+export interface Translations {
   [key: string]: {} | string
 }
 
-interface AllTranslations {
+export interface AllTranslations {
   [key: string]: Translations
 }

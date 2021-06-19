@@ -1,3 +1,4 @@
+import type { I18nOptions } from '../types/global'
 import { I18n } from './i18n'
 
 export const VuePlugin = {
