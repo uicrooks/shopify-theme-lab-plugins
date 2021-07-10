@@ -7,7 +7,7 @@
 <!-- title / description (start) -->
 <h2 align="center">Shopify Theme Lab Reloader</h2>
 
-Plugin for reloading a remote Shopify theme during development. It's included by default in [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme-lab).
+Plugin for reloading a remote Shopify theme during development. It's included by default in [Shopify Theme Lab](https://github.com/uicrooks/shopify-theme-lab) versions prior to 4.
 <!-- title / description (end) -->
 
 <!-- how it works (start) -->

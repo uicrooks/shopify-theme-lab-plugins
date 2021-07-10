@@ -16,7 +16,7 @@ export class I18n {
 
   private _loadTranslations () {
     const translations: AllTranslations = {}
-    const files = require.context('@shopify-directory/locales/', true, /\.json$/)
+    const files = require.context('@shopify-directory/locales/', true, /(?<!schema)\.json$/)
 
     files.keys().forEach(key => {
       const locale = files(key)
