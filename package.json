@@ -1,4 +1,7 @@
 {
   "name": "shopify-theme-lab-plugins",
-  "private": "true"
+  "private": "true",
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
 }

@@ -1,6 +1,9 @@
 interface Window {
   Shopify: {
-    locale: string
+    locale: string,
+    Checkout: {
+      normalizedLocale: string
+    }
   }
 }
 

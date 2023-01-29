@@ -9,7 +9,7 @@ export class I18n {
   readonly locale: string
 
   constructor (options?: I18nOptions) {
-    this.locale = window.Shopify.locale || options?.fallbackLocale || 'en'
+    this.locale = window.Shopify.locale || window.Shopify.Checkout?.normalizedLocale || options?.fallbackLocale || 'en'
     this.translations = this._loadTranslations()
     this.$t = this.$t.bind(this)
   }
